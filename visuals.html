@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <link href="img/3dimg.png" rel="icon">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #121212;
+            background-image: url(stars.gif);
+        }
+
+        model-viewer {
+            width: 100%;
+            max-width: 600px;
+            height: 80vh;
+            /* background-color: #1f1f1f; */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><p>hello</p></div>
+    <model-viewer src="assets/scene.gltf" camera-controls auto-rotate ar></model-viewer>
+</body>
+</html>
